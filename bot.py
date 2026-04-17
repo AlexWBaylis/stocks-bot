@@ -35,11 +35,3 @@ while True:
     except Exception as e:
         print("Error:", e)
         time.sleep(10)
-FROM python:3.11
-
-WORKDIR /app
-COPY . .
-
-RUN pip install python-telegram-bot requests
-
-CMD ["python", "bot.py"]
